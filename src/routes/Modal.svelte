@@ -1,0 +1,398 @@
+<script>
+	import { closeModal } from 'svelte-modals';
+
+	/**
+	 * @type {any}
+	 */
+	export let isOpen;
+
+	
+</script>
+
+{#if isOpen}
+	<div class="container w-full h-full bg-slate-100">
+		<div
+			class="modal w-full h-full top-0 left-0 bottom-0 right-0 fixed"
+			tabindex="-1"
+			aria-hidden="true"
+		>
+			<div class="modal-signup w-1/2 m-auto mt-24 bg-white relative rounded-md p-5 shadow-md max-w-[35%]">
+				<div
+					class="modal-close absolute text-xl cursor-pointer text-black right-3 top-3"
+					on:click={closeModal}
+				>
+					X
+				</div>
+
+				<div class="modal-signup-head w-full pb-3 mt-1 text-3xl">
+					<p class="modal-signup-name text-3xl font-bold">Sign Up</p>
+
+					<p class="modal-signup-note text-base mt-1">It's quick and easy.</p>
+				</div>
+
+				<div class="modal-signup-name w-full flex mt-3 justify-between">
+					<input type="text" placeholder="First name" class="w-[48%] p-[8px] text-[17px] rounded-[5px] border-none" />
+
+					<input type="text" placeholder="Surname" class="w-[48%] p-[8px] text-[17px] rounded-[5px] border-none"/>
+				</div>
+
+				<div class="modal-signup-email w-full flex mt-3">
+					<input type="email" placeholder="Email address or phone number"class="w-[100%] p-[8px] text-[17px] rounded-[5px] border-none" />
+				</div>
+
+				<div class="modal-signup-password w-full flex mt-3">
+					<input type="password" placeholder="Password" class="w-[100%] p-[8px] text-[17px] rounded-[5px] border-none" />
+				</div>
+
+				<div class="modal-date-birth w-full flex mt-3 text-center">
+					<label for="">Date of birth</label>
+
+					<div class="modal-date-alert w-4 h-4 inline-block text-xs text-center text-white ml-1 rounded-[50%]">
+						<a>&#63;</a>
+					</div>
+				</div>
+
+				<div class="modal-date-selection w-[100%] flex  mt-[5px]">
+					<div class="select-choice w-[33%]">
+						<select name="" id="" class="w-[96%] p-[5px] text-[17px] rounded-[5px] border-none text-black">
+							<option value=""> 1 </option>
+							<option value=""> 2 </option>
+							<option value=""> 3 </option>
+							<option value=""> 4 </option>
+
+							<option value=""> 5 </option>
+
+							<option value=""> 6 </option>
+
+							<option value=""> 7 </option>
+
+							<option value=""> 8 </option>
+
+							<option value=""> 9 </option>
+
+							<option value=""> 10 </option>
+
+							<option value=""> 11 </option>
+
+							<option value=""> 12 </option>
+
+							<option value=""> 13 </option>
+
+							<option value=""> 14 </option>
+
+							<option value=""> 15 </option>
+
+							<option value=""> 16 </option>
+
+							<option value=""> 17 </option>
+
+							<option value=""> 18 </option>
+
+							<option value=""> 19 </option>
+
+							<option value=""> 20 </option>
+
+							<option value=""> 21 </option>
+
+							<option value=""> 22 </option>
+
+							<option value=""> 23 </option>
+
+							<option value=""> 24 </option>
+
+							<option value=""> 25 </option>
+
+							<option value=""> 26 </option>
+
+							<option value=""> 27 </option>
+
+							<option value=""> 28 </option>
+
+							<option value=""> 29 </option>
+
+							<option value=""> 30 </option>
+
+							<option value=""> 31 </option>
+						</select>
+					</div>
+					<div class="select-choice w-[33%]">
+						<select name="" id="" class="w-[96%] p-[5px] text-[17px] rounded-[5px] border-none text-black">
+							<option value=""> Jan </option>
+
+							<option value=""> Feb </option>
+
+							<option value=""> Mar </option>
+
+							<option value=""> Apr </option>
+
+							<option value=""> May </option>
+
+							<option value=""> Jun </option>
+
+							<option value=""> Jul </option>
+
+							<option value=""> Aug </option>
+
+							<option value=""> Sep </option>
+
+							<option value=""> Auc </option>
+
+							<option value=""> Nav </option>
+
+							<option value=""> Dec </option>
+						</select>
+					</div>
+					<div class="select-choice w-[33%]">
+						<select name="" id="" class="w-[96%] p-[5px] text-[17px] rounded-[5px] border-none text-black">
+							<option value=""> 1950 </option>
+
+							<option value=""> 1951 </option>
+
+							<option value=""> 1952 </option>
+
+							<option value=""> 1953 </option>
+
+							<option value=""> 1954 </option>
+
+							<option value=""> 1955 </option>
+
+							<option value=""> 1956 </option>
+
+							<option value=""> 1957 </option>
+
+							<option value=""> 1958 </option>
+
+							<option value=""> 1959 </option>
+
+							<option value=""> 1960 </option>
+
+							<option value=""> 1961 </option>
+
+							<option value=""> 1962 </option>
+
+							<option value=""> 1963 </option>
+
+							<option value=""> 1964 </option>
+
+							<option value=""> 1965 </option>
+
+							<option value=""> 1966 </option>
+
+							<option value=""> 1967 </option>
+
+							<option value=""> 1968 </option>
+
+							<option value=""> 1969 </option>
+
+							<option value=""> 1970 </option>
+
+							<option value=""> 1971 </option>
+
+							<option value=""> 1972 </option>
+
+							<option value=""> 1973 </option>
+
+							<option value=""> 1974 </option>
+
+							<option value=""> 1975 </option>
+
+							<option value=""> 1976 </option>
+
+							<option value=""> 1977 </option>
+
+							<option value=""> 1978 </option>
+
+							<option value=""> 1979 </option>
+
+							<option value=""> 1980 </option>
+
+							<option value=""> 1981 </option>
+
+							<option value=""> 1982 </option>
+
+							<option value=""> 1983 </option>
+
+							<option value=""> 1984 </option>
+
+							<option value=""> 1985 </option>
+
+							<option value=""> 1986 </option>
+
+							<option value=""> 1987 </option>
+
+							<option value=""> 1988 </option>
+
+							<option value=""> 1989 </option>
+
+							<option value=""> 1990 </option>
+
+							<option value=""> 1991 </option>
+
+							<option value=""> 1992 </option>
+
+							<option value=""> 1993 </option>
+
+							<option value=""> 1994 </option>
+
+							<option value=""> 1995 </option>
+
+							<option value=""> 1996 </option>
+
+							<option value=""> 1997 </option>
+
+							<option value=""> 1998 </option>
+
+							<option value=""> 1999 </option>
+
+							<option value=""> 2000 </option>
+
+							<option value=""> 2001 </option>
+
+							<option value=""> 2002 </option>
+
+							<option value=""> 2003 </option>
+
+							<option value=""> 2004 </option>
+
+							<option value=""> 2005 </option>
+
+							<option value=""> 2006 </option>
+
+							<option value=""> 2007 </option>
+
+							<option value=""> 2008 </option>
+
+							<option value=""> 2009 </option>
+
+							<option value=""> 2010 </option>
+
+							<option value=""> 2011 </option>
+
+							<option value=""> 2012 </option>
+
+							<option value=""> 2013 </option>
+
+							<option value=""> 2014 </option>
+
+							<option value=""> 2015 </option>
+
+							<option value=""> 2016 </option>
+
+							<option value=""> 2017 </option>
+
+							<option value=""> 2018 </option>
+
+							<option value=""> 2019 </option>
+
+							<option value=""> 2020 </option>
+						</select>
+					</div>
+				</div>
+
+				<div class="modal-gender w-full flex text-center mt-3">
+					<label for="">Gender</label>
+
+					<div class="modal-gender-alert h-4 w-4 inline-block text-xs text-center text-white ml-1">
+						<a>&#63;</a>
+					</div>
+				</div>
+
+				<div class="modal-gender-choice w-full justify-between flex mt-1">
+					<div class="modal-gender-name w-[32%] p-[5px] text-[17px] rounded-[5px] border-none justify-between flex item-aligns-center">
+						<label for="radiochoice">Female</label>
+
+						<input type="radio" name="radio" id="radiochoice" />
+					</div>
+
+					<div class="modal-gender-name w-[32%] p-[5px] text-[17px] rounded-[5px] border-none justify-between flex item-aligns-center">
+						<label for="radiochoice2">Male</label>
+
+						<input type="radio" name="radio" id="radiochoice2" />
+					</div>
+
+					<div class="modal-gender-name w-[32%] p-[5px] text-[17px] rounded-[5px] border-none justify-between flex item-aligns-center ">
+						<label for="radiochoice3">Custom</label>
+
+						<input type="radio" name="radio" id="radiochoice3" />
+					</div>
+				</div>
+
+				<div class="modal-signup-terms w-full mt-4 text-xs">
+					<p>
+						By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may
+						receive SMS notifications from us and can opt out at any time.
+					</p>
+				</div>
+
+				<div class="modal-signup-button w-full m-auto mt-5">
+					<button on:click={closeModal} class="w-[100%] p-[10px] text-[18px] rounded-[5px] border-none text-white cursor-pointer "> Sign Up</button>
+				</div>
+			</div>
+		</div>
+	</div>
+{/if}
+<style>
+     * {
+            
+            box-sizing: border-box;
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+        }
+        
+        .modal {
+            background-color: rgba(250, 250, 250, 0.8);
+        }
+        .modal-signup {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        .modal-signup-head {
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .modal-signup-name input[type='text'] {
+           
+            border: 1px solid #ccc;
+            background-color: #eee;
+        }
+        
+        .modal-signup-email input[type='email'] {
+           
+            border: 1px solid #ccc;
+            background-color: #eee;
+        }
+        
+        .modal-signup-password input[type='password'] {
+            
+            border: 1px solid #ccc;
+            background-color: #eee;
+        }
+        
+        .modal-date-alert {
+            background-color: #aaa;
+        }
+        .select-choice select {
+           
+            border: 1px solid #ccc;
+            color: #080808;
+        }
+        
+        .modal-gender-alert {
+            background-color: #aaa;
+            border-radius: 50%;
+        }
+        
+        .modal-gender-name {
+            border: 1px solid #ccc;
+
+        }
+        
+        .modal-signup-button {
+            max-width: 200px;
+        }
+        .modal-signup-button button {
+           
+            background-color: #32cd32;
+           
+        }
+        
+</style>
