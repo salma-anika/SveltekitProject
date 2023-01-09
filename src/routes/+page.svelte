@@ -1,5 +1,4 @@
 <script>
-	import { Modals, closeModal } from 'svelte-modals';
 
 	import { openModal } from 'svelte-modals';
 
@@ -13,9 +12,7 @@
 	}
 </script>
 
-<Modals>
-	<div slot="svelte-modal" on:click={closeModal} />
-</Modals>
+
 
 <div class="container">
 	<div class="main h-[650] w-[980px] m-auto flex pt-[100px]">
