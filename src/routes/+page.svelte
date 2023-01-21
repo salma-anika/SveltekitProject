@@ -7,8 +7,7 @@
 
 	function handleClick() {
 		openModal(Modal, {
-			title: 'Title of the Modal',
-			message: 'This is an alert using Svelte-Modal'
+			
 		});
 	}
 </script>
