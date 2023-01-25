@@ -16,17 +16,17 @@
 	<div slot="svelte-modal" on:click={closeModal} />
 </Modals>
 
-<div class="container">
-	<div class="main h-[650] w-[980px] m-auto flex pt-[100px]">
+<div class="container ">
+	<div class="main h-[650] w-[980px] m-auto flex pt-[100px] max-[450px]:flex-col max-[450px]:w-[100%]">
 		<div class="main-left w-[580px] p-[20px]">
-			<p class="facebook-logo text-[55px] font-bold mt-[100px]">facebook</p>
+			<p class="facebook-logo text-[55px] font-bold mt-[100px] max-[450px]:text-[75px]">facebook</p>
 
-			<p class="facebook-status font-[28px] mt-[10px] text-black">
+			<p class="facebook-status text-[28px] mt-[10px] text-black max-[450px]:text-[30px]">
 				Facebook helps you connect and share with the people in your life.
 			</p>
 		</div>
 
-		<div class="main-right w-[400px] h-[450px]">
+		<div class="main-right w-[400px] h-[450px] max-[450px]:w-[550px] max-[450px]:h-[550px] m-auto">
 			<div class="main-right-login p-[20px] bg-white rounded-[6px]">
 				<div class="main-right-email w-[100%] mt-[10px]">
 					<input

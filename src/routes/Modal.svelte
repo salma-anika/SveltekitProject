@@ -98,7 +98,7 @@
 	<div class="container w-full h-full bg-slate-100">
 		<div
 			class="modal w-full h-full top-0 left-0 bottom-0 right-0 fixed">
-			<div class="modal-signup w-1/2 m-auto mt-24 bg-white relative rounded-md p-5 shadow-md max-w-[35%]">
+			<div class="modal-signup m-auto mt-24 bg-white relative rounded-md p-5 shadow-md max-w-[35%] max-[450px]:max-w-[80%]">
 				<div class="modal-close absolute text-xl cursor-pointer text-black right-3 top-3" on:click={closeModal}>
 					X
 				</div>
