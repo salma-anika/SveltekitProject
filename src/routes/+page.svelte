@@ -1,9 +1,14 @@
+<script lang="ts" context="module">
+	import '../app.css'
+</script>
 <script>
 	import { Modals, closeModal } from 'svelte-modals';
 
 	import { openModal } from 'svelte-modals';
 
 	import Modal from './Modal.svelte';
+	import Theme from './Theme.svelte';
+	
 
 	function handleClick() {
 		openModal(Modal, {
@@ -11,17 +16,17 @@
 		});
 	}
 </script>
-
+<Theme/>
 <Modals>
 	<div slot="svelte-modal" on:click={closeModal} />
 </Modals>
 
-<div class="container ">
-	<div class="main h-[650] w-[980px] m-auto flex pt-[100px] max-[450px]:flex-col max-[450px]:w-[100%]">
-		<div class="main-left w-[580px] p-[20px]">
+<div class=" bg-slate-100 dark:bg-slate-700 border-b border-slate-200 dark:border-slate-900 ">
+	<div class=" m-auto flex pt-[100px] max-[450px]:flex-col max-[450px]:w-[100%] ">
+		<div class="main-left w-[580px] p-[40px]">
 			<p class="facebook-logo text-[55px] font-bold mt-[100px] max-[450px]:text-[75px]">facebook</p>
 
-			<p class="facebook-status text-[28px] mt-[10px] text-black max-[450px]:text-[30px]">
+			<p class="facebook-status text-[28px] mt-[10px] text-black max-[450px]:text-[30px] dark:text-white">
 				Facebook helps you connect and share with the people in your life.
 			</p>
 		</div>
