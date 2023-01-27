@@ -135,22 +135,22 @@
 				</div>
                 
 				<div class="modal-date-selection w-[100%] flex  mt-[5px] ">
-					<div class="select-choice w-[33%] ">
-                        <select name="" id="" bind:value={selected2} class="w-[96%] p-[5px] text-[17px] rounded-[5px] border-none text-black dark:bg-zinc-700 dark:border-slate-200 dark:text-white">
+					<div class="select-choice w-[33%] " >
+                        <select name="" id="" bind:value={selected2}  class="w-[96%] p-[5px] text-[17px] rounded-[5px] border-none text-black dark:bg-zinc-700 dark:border-slate-200 dark:text-white" style="border: 1px solid #ccc;">
                            
                             {#each options2 as value}<option {value}>{value}</option>{/each}
                         </select>
 					</div>
 					<div class="select-choice w-[33%]">
 					
-							<select name="" id="" bind:value={selected1} class="w-[96%] p-[5px] text-[17px] rounded-[5px] border-none text-black dark:bg-zinc-700 dark:border-slate-200 dark:text-white">
+							<select name="" id="" bind:value={selected1} class="w-[96%] p-[5px] text-[17px] rounded-[5px] border-none text-black dark:bg-zinc-700 dark:border-slate-200 dark:text-white " style="border: 1px solid #ccc;">
                            
                                 {#each options1 as value}<option {value}>{value}</option>{/each}
                             
 						</select>
 					</div>
 					<div class="select-choice w-[33%]">
-						<select name="" id="" bind:value={selected} class="w-[96%] p-[5px] text-[17px] rounded-[5px] border-none text-black dark:bg-zinc-700 dark:border-slate-200 dark:text-white">
+						<select name="" id="" bind:value={selected} class="w-[96%] p-[5px] text-[17px] rounded-[5px] border-none text-black dark:bg-zinc-700 dark:border-slate-200 dark:text-white" style="border: 1px solid #ccc;">
                            
                                 {#each options as value}<option {value}>{value}</option>{/each}
                             </select>
@@ -235,7 +235,7 @@
             border: 1px solid #ccc;
             
         }
-        
+    
         
         .modal-gender-alert {
             background-color: #aaa;
