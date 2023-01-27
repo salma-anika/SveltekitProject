@@ -21,7 +21,7 @@
 	<div slot="svelte-modal" on:click={closeModal} />
 </Modals>
 
-<div class=" bg-slate-100 dark:bg-slate-700 border-b border-slate-200 dark:border-slate-900 ">
+<div class=" bg-slate-100 dark:bg-zinc-800 border-b border-slate-200 dark:border-slate-900 ">
 	<div class=" m-auto flex pt-[100px] max-[450px]:flex-col max-[450px]:w-[100%] ">
 		<div class="main-left w-[580px] p-[40px]">
 			<p class="facebook-logo text-[55px] font-bold mt-[100px] max-[450px]:text-[75px]">facebook</p>
@@ -32,12 +32,12 @@
 		</div>
 
 		<div class="main-right w-[400px] h-[450px] max-[450px]:w-[550px] max-[450px]:h-[550px] m-auto">
-			<div class="main-right-login p-[20px] bg-white rounded-[6px]">
+			<div class="main-right-login p-[20px] bg-white rounded-[6px] dark:bg-zinc-700">
 				<div class="main-right-email w-[100%] mt-[10px]">
 					<input
 						type="email"
 						placeholder="Email address or phone number"
-						class="w-[100%] p-[9px] font-[17px] rounded-[5px]"
+						class="w-[100%] p-[9px] font-[17px] rounded-[5px] dark:bg-zinc-700 dark:border-slate-200 dark:text-white"
 					/>
 				</div>
 
@@ -45,7 +45,7 @@
 					<input
 						type="password"
 						placeholder="Password"
-						class="w-[100%] p-[9px] font-[17px] rounded-[5px]"
+						class="w-[100%] p-[9px] font-[17px] rounded-[5px] dark:bg-zinc-700 dark:border-slate-200 dark:text-white"
 					/>
 				</div>
 
@@ -71,8 +71,8 @@
 				</div>
 
 				<div class="main-right-page-link w-[400px] mt-[20px] flex justify-center text-[17px]">
-					<a href="" class="font-bold text-black">create a Page </a>
-					<p class="ml-[5px]">for a celebrity, band or business.</p>
+					<a href="" class="font-bold text-black dark:text-white">Create a Page </a>
+					<p class="ml-[5px] dark:text-white">for a celebrity, band or business.</p>
 				</div>
 			</div>
 		</div>

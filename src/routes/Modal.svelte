@@ -1,4 +1,7 @@
+
 <script>
+	import '../app.css';
+	import Theme from './Theme.svelte';
 	import { closeModal } from 'svelte-modals';
 	
 
@@ -95,35 +98,35 @@
 </script>
 
 {#if isOpen}
-	<div class="container w-full h-full bg-slate-100">
+	<div class="container w-full h-full bg-slate-100 ">
 		<div
 			class="modal w-full h-full top-0 left-0 bottom-0 right-0 fixed">
-			<div class="modal-signup m-auto mt-24 bg-white relative rounded-md p-5 shadow-md max-w-[35%] max-[450px]:max-w-[80%]">
-				<div class="modal-close absolute text-xl cursor-pointer text-black right-3 top-3" on:click={closeModal}>
+			<div class="modal-signup m-auto mt-24 bg-white dark:bg-zinc-800 relative rounded-md p-5 shadow-md max-w-[35%] max-[450px]:max-w-[80%]">
+				<div class="modal-close absolute text-xl cursor-pointer text-black right-3 top-3 dark:text-white" on:click={closeModal}>
 					X
 				</div>
 
 				<div class="modal-signup-head w-full pb-3 mt-1 text-3xl">
-					<p class="modal-signup-name text-3xl font-bold">Sign Up</p>
+					<p class="modal-signup-name text-3xl font-bold dark:text-white">Sign Up</p>
 
-					<p class="modal-signup-note text-base mt-1">It's quick and easy.</p>
+					<p class="modal-signup-note text-base mt-1 dark:text-white">It's quick and easy.</p>
 				</div>
 
-				<div class="modal-signup-name w-full flex mt-3 justify-between">
-					<input type="text" placeholder="First name" class="w-[48%] p-[8px] text-[17px] rounded-[5px] border-none" />
+				<div class="modal-signup-name w-full flex mt-3 justify-between ">
+					<input type="text" placeholder="First name" class="w-[48%] p-[8px] text-[17px] rounded-[5px] border-none dark:bg-zinc-700 dark:border-slate-200 dark:text-white" />
 
-					<input type="text" placeholder="Surname" class="w-[48%] p-[8px] text-[17px] rounded-[5px] border-none"/>
+					<input type="text" placeholder="Surname" class="w-[48%] p-[8px] text-[17px] rounded-[5px] border-none dark:bg-zinc-700 dark:border-slate-200 dark:text-white"/>
 				</div>
 
-				<div class="modal-signup-email w-full flex mt-3">
-					<input type="email" placeholder="Email address or phone number"class="w-[100%] p-[8px] text-[17px] rounded-[5px] border-none" />
+				<div class="modal-signup-email w-full flex mt-3 ">
+					<input type="email" placeholder="Email address or phone number"class="w-[100%] p-[8px] text-[17px] rounded-[5px] border-none dark:bg-zinc-700 dark:border-slate-200 dark:text-white" />
 				</div>
 
 				<div class="modal-signup-password w-full flex mt-3">
-					<input type="password" placeholder="Password" class="w-[100%] p-[8px] text-[17px] rounded-[5px] border-none" />
+					<input type="password" placeholder="Password" class="w-[100%] p-[8px] text-[17px] rounded-[5px] border-none dark:bg-zinc-700 dark:border-slate-200 dark:text-white" />
 				</div>
 
-				<div class="modal-date-birth w-full flex mt-3 text-center">
+				<div class="modal-date-birth w-full flex mt-3 text-center dark:text-white">
 					<label for="">Date of birth</label>
 
 					<div class="modal-date-alert w-4 h-4 inline-block text-xs text-center text-white ml-1 rounded-[50%] ">
@@ -131,23 +134,23 @@
 					</div>
 				</div>
                 
-				<div class="modal-date-selection w-[100%] flex  mt-[5px]">
-					<div class="select-choice w-[33%]">
-                        <select name="" id="" bind:value={selected2} class="w-[96%] p-[5px] text-[17px] rounded-[5px] border-none text-black">
+				<div class="modal-date-selection w-[100%] flex  mt-[5px] ">
+					<div class="select-choice w-[33%] ">
+                        <select name="" id="" bind:value={selected2} class="w-[96%] p-[5px] text-[17px] rounded-[5px] border-none text-black dark:bg-zinc-700 dark:border-slate-200 dark:text-white">
                            
                             {#each options2 as value}<option {value}>{value}</option>{/each}
                         </select>
 					</div>
 					<div class="select-choice w-[33%]">
 					
-							<select name="" id="" bind:value={selected1} class="w-[96%] p-[5px] text-[17px] rounded-[5px] border-none text-black">
+							<select name="" id="" bind:value={selected1} class="w-[96%] p-[5px] text-[17px] rounded-[5px] border-none text-black dark:bg-zinc-700 dark:border-slate-200 dark:text-white">
                            
                                 {#each options1 as value}<option {value}>{value}</option>{/each}
                             
 						</select>
 					</div>
 					<div class="select-choice w-[33%]">
-						<select name="" id="" bind:value={selected} class="w-[96%] p-[5px] text-[17px] rounded-[5px] border-none text-black">
+						<select name="" id="" bind:value={selected} class="w-[96%] p-[5px] text-[17px] rounded-[5px] border-none text-black dark:bg-zinc-700 dark:border-slate-200 dark:text-white">
                            
                                 {#each options as value}<option {value}>{value}</option>{/each}
                             </select>
@@ -155,7 +158,7 @@
 					</div>
 				</div>
 
-				<div class="modal-gender w-full flex text-center mt-3">
+				<div class="modal-gender w-full flex text-center mt-3 dark:text-white ">
 					<label for="">Gender</label>
 
 					<div class="modal-gender-alert h-4 w-4 inline-block text-xs text-center text-white ml-1">
@@ -163,11 +166,11 @@
 					</div>
 				</div>
 
-				<div class="modal-gender-choice w-full justify-between flex mt-1">
+				<div class="modal-gender-choice w-full justify-between flex mt-1 dark:bg-zinc-700 dark:border-slate-200 dark:text-white">
 					<div class="modal-gender-name w-[32%] p-[5px] text-[17px] rounded-[5px] border-none justify-between flex item-aligns-center">
 						<label for="radiochoice">Female</label>
 
-						<input type="radio" name="radio" id="radiochoice" />
+						<input type="radio" name="radio" id="radiochoice " />
 					</div>
 
 					<div class="modal-gender-name w-[32%] p-[5px] text-[17px] rounded-[5px] border-none justify-between flex item-aligns-center">
@@ -183,7 +186,7 @@
 					</div>
 				</div>
 
-				<div class="modal-signup-terms w-full mt-4 text-xs">
+				<div class="modal-signup-terms w-full mt-4 text-xs dark:text-white">
 					<p>
 						By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may
 						receive SMS notifications from us and can opt out at any time.
@@ -218,29 +221,21 @@
         .modal-signup-name input[type='text'] {
            
             border: 1px solid #ccc;
-            background-color: #eee;
+           
         }
         
         .modal-signup-email input[type='email'] {
            
             border: 1px solid #ccc;
-            background-color: #eee;
+           
         }
         
         .modal-signup-password input[type='password'] {
             
             border: 1px solid #ccc;
-            background-color: #eee;
+            
         }
         
-        .modal-date-alert {
-            background-color: #aaa;
-        }
-        .select-choice select {
-           
-            border: 1px solid #ccc;
-            color: #080808;
-        }
         
         .modal-gender-alert {
             background-color: #aaa;
