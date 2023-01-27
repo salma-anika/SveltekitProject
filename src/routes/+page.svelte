@@ -21,7 +21,7 @@
 	<div slot="svelte-modal" on:click={closeModal} />
 </Modals>
 
-<div class=" bg-slate-100 dark:bg-zinc-800 border-b border-slate-200 dark:border-slate-900 max-[450px]:w-fit">
+<div class=" bg-slate-100 dark:bg-zinc-800 border-b border-slate-200 dark:border-slate-900 max-[450px]:w-fit ">
 	<div class=" m-auto flex pt-[100px] max-[450px]:flex-col ">
 		<div class="main-left w-[580px] p-[40px]">
 			<p class="facebook-logo text-[55px] font-bold mt-[100px] max-[450px]:text-[75px]">facebook</p>
