@@ -53,7 +53,8 @@
 					<button
 						class="w-[100%] p-[9px] font-[17px] rounded-[8px] cursor-pointer text-white border-none"
 					>
-						Log In
+					<a href="/profile">Log In</a>
+						
 					</button>
 				</div>
 
