@@ -1,8 +1,8 @@
 <script lang="ts">
-	
+	import Intro from '../components/Intro.svelte';
+    import { Tabscopy, TabList, TabPanel, Tab } from '../components/tabs';
 
-
-
+import TimelineHeader from '../components/TimelineHeader.svelte';
 import '../../app.css';
 import FacebookLogo from '../../icons/facebookLogo.svelte';
 import SearchIcon from '../../icons/searchIcon.svelte';
@@ -13,7 +13,12 @@ import Feed from '../../icons/feed.svelte';
 import Plus from '../../icons/plus.svelte';
 import Messenger from '../../icons/messenger.svelte';
 import Bell from '../../icons/bell.svelte';
-
+import SuitCase from '../../icons/suitCase.svelte';
+import Hat from '../../icons/hat.svelte';
+import HomeAlt from '../../icons/homeAlt.svelte';
+import Pin from '../../icons/pin.svelte';
+import RSS from '../../icons/rss.svelte';
+import More from '../../icons/more.svelte';
 </script>
 <div>
     <div class="h-14 flex justify-between w-screen shadow-fb px-4 py-2  max-[450px]:text-[26px]">
@@ -76,8 +81,141 @@ import Bell from '../../icons/bell.svelte';
             <Bell />
           </div>
 
-        
        
       </div>
+      
     </div>
+   
+    <TimelineHeader/>
+    <div class='container px-44'>
+        <Tabscopy>
+            
+            <TabList>
+                <Tab>OverView</Tab>
+                <Tab> Work and education</Tab>
+                <Tab>Places lived</Tab>
+                <Tab> Contact and basic info</Tab>
+                <Tab>Details about you</Tab>
+            </TabList>
+        
+            <TabPanel>
+                <h2 class="content"><Intro/> </h2>
+            </TabPanel>
+        
+            <TabPanel>
+                <h2 class="content"> 
+                    <div class="shadow-fb rounded w-full bg-white p-4">
+   
+                        <div class="mt-1 flex items-start ">
+                          <SuitCase />
+                          <span class="ml-2 ">
+                            Astha IT Limited Bangladesh{' '}
+                     
+                          </span>
+                          <div class=' items-end  justify-end ml-[385px] '> <More /></div>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                          <Hat />
+                          <span class="ml-2">Studied at Bangladesh Army University </span>
+                          <div class=' items-end justify-end ml-[315px]'> <More/></div>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                          <Hat />
+                          <span class="ml-2">Intern at Sun IT Limited Rajshahi </span>
+                          <div class=' items-end justify-end ml-[360px]'> <More/></div>
+                        </div>
+                        </div>
+                             
+                             
+                </h2>
+            </TabPanel>
+        
+            <TabPanel>
+                <h2 class="content">
+                    <div class="shadow-fb rounded w-full bg-white p-4">
+   
+ 
+                        <div class="mt-4 flex items-center">
+                          <HomeAlt />
+                          <span class="ml-2">
+                            Lives in <b>Rajshahi</b>, Bangladesh{' '}
+                          </span>
+                          <div class=' items-end justify-end ml-[380px]'> <More /></div>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                          <Pin />
+                          <span class="ml-2">
+                            From  <b>Rajshahi</b>, Bangladesh{' '}
+                          </span>
+                          <div class=' items-end ml-[393px] justify-end '> <More/></div>
+                        </div>
+                     
+                             </div>
+                             
+                     
+                </h2>
+            </TabPanel>
+            <TabPanel>
+                <h2 class="content">
+                    <div class="shadow-fb rounded w-full bg-white p-4">
+   
+                        <div class="mt-1 flex items-start ">
+                          <SuitCase />
+                          <span class="ml-2 ">
+                            Astha IT Limited Bangladesh{' '}
+                     
+                          </span>
+                          <div class=' items-end  justify-end ml-[385px] '> <More/></div>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                          <Hat />
+                          <span class="ml-2">Studied at Bangladesh Army University </span>
+                          <div class=' items-end justify-end ml-[315px]'> <More/></div>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                          <Hat />
+                          <span class="ml-2">Intern at Sun IT Limited Rajshahi </span>
+                          <div class=' items-end justify-end ml-[360px]'> <More/></div>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                          <HomeAlt />
+                          <span class="ml-2">
+                            Lives in <b>Rajshahi</b>, Bangladesh{' '}
+                          </span>
+                          <div class=' items-end justify-end ml-[380px]'> <More/></div>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                          <Pin />
+                          <span class="ml-2">
+                            From  <b>Rajshahi</b>, Bangladesh{' '}
+                          </span>
+                          <div class=' items-end ml-[393px] justify-end '> <More /></div>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                          <RSS />
+                          <span class="ml-2">
+                            Followed by <b>97 people</b> {' '}
+                          </span>
+                          <div class=' items-end ml-[420px] justify-end '> <More /></div>
+                        </div>
+                        </div>
+                             
+                     
+                             
+                     
+                </h2>
+            </TabPanel>
+            <TabPanel>
+                <h2 class="content">
+                    <Intro/>
+                             
+                     
+                </h2>
+            </TabPanel>
+
+        </Tabscopy>
+        
+     
+        </div>
+       
   </div>
